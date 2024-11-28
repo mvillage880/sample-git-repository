@@ -1,7 +1,28 @@
-<script src="rs_virus_data.js"></script>
-<script>
-  // JavaScriptでデータを取得し利用
-  console.log(rs_status);
-  console.log(rs_prefList);
-</script>
-<img src="rs_virus_national_trend_adjusted.png" alt="全国のRSウイルス流行期グラフ">
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSウイルス流行状況</title>
+    <script src="rs_virus_data.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>全国のRSウイルス流行状況</h1>
+    <p>データ提供: NIID (国立感染症研究所)</p>
+    <img src="rs_virus_national_trend_adjusted.png" alt="RSウイルス流行状況のグラフ">
+    <script>
+        console.log(rs_status);
+        console.log(rs_prefList);
+    </script>
+</body>
+</html>
